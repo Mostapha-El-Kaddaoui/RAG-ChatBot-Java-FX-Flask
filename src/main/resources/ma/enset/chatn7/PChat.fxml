@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1086.0" styleClass="white-background" stylesheets="@Resources/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.chatn7.PRESENTATION.PChat">
+    <children>
+      <HBox layoutX="0.0" prefHeight="94.0" prefWidth="1086.0" stylesheets="@Resources/style.css">
+         <children>
+            <HBox prefHeight="70.0" prefWidth="651.0" stylesheets="@Resources/style.css">
+               <children>
+                  <Label styleClass="white-text" stylesheets="@Resources/style.css" text="Model used for responding to questions ">
+                     <font>
+                        <Font name="Quicksand Medium" size="22.0" />
+                     </font>
+                  </Label>
+                    <ComboBox prefWidth="150.0" styleClass="MenuLLMS" stylesheets="@Resources/style.css">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="GPT 3.5" />
+                                <String fx:value="DALL 2" />
+                                <String fx:value="LLAMA" />
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+               </children>
+               <styleClass>
+                  <String fx:value="left-center" />
+                  <String fx:value="padding-10" />
+               </styleClass>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="391.0" styleClass="right-align" stylesheets="@Resources/style.css">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="gray-background" />
+            <String fx:value="padding-20" />
+         </styleClass>
+      </HBox>
+      <HBox layoutX="135.0" layoutY="577.0" prefHeight="109.0" prefWidth="820.0" stylesheets="@Resources/style.css">
+         <styleClass>
+            <String fx:value="light-gray-background" />
+            <String fx:value="message-container" />
+         </styleClass>
+         <children>
+            <VBox prefHeight="89.0" prefWidth="804.0" styleClass="Space-10" stylesheets="@Resources/style.css">
+               <children>
+                  <TextField fx:id="messageinput" prefHeight="42.0" prefWidth="800.0" promptText="Write your message here ...">
+                     <styleClass>
+                        <String fx:value="message-input" />
+                        <String fx:value="placeholder-field" />
+                     </styleClass>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <HBox prefHeight="31.0" prefWidth="707.0" styleClass="space-15">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="427.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="28.0" fitWidth="29.0" onMouseClicked="#SendMessage" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Resources/send.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="29.0" fitWidth="26.0" onMouseClicked="#recordVoice" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Resources/microphone.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="369.0" spacing="10.0" style="-fx-alignment: left;">
+                           <children>
+                              <ImageView fitHeight="29.0" fitWidth="29.0" onMouseClicked="#getDocument" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Resources/upload.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="26.0" fitWidth="26.0" onMouseClicked="#getLink" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Resources/link.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="containerChatMessages" layoutX="58.0" layoutY="102.0" prefHeight="461.0" prefWidth="967.0" styleClass="neutrilze-border">
+         <content>
+            <VBox fx:id="chatMessages" prefHeight="452.0" prefWidth="945.0" styleClass="padding-10" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="14.0" layoutY="102.0" onMouseClicked="#newChat" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Resources/plus.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

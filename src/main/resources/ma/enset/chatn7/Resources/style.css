@@ -1,0 +1,242 @@
+
+.SideBar{
+ -fx-background-color: rgb(51, 51, 51);
+}
+
+.logoTest{
+    -fx-font-size:30px;
+    -fx-text-fill:white;
+    -fx-font-weight: bold;
+}
+
+.nameText{
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+
+.inputContainer{
+    -fx-background-color: white;
+    -fx-background-radius: 30px;
+    -fx-padding: 5px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+.loop{
+    -fx-padding: 4px;
+}
+.input{
+    -fx-background-color: white;
+    -fx-border-width: 0px;
+}
+
+.AddHistory{
+    -fx-background-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-color: gray;
+    -fx-padding: 2px;
+    -fx-border-radius: 5px;
+}
+
+.neutrlizeButton{
+    -fx-background-color: transparent;
+    -fx-border-color: none;
+    -fx-border-width: 0px;
+    -fx-text-fill: gray;
+    -fx-font-size: 12px;
+    -fx-alignment: center-left;
+}
+
+.Space-10{
+    -fx-spacing: 10px;
+}
+
+.MenuLLMS{
+    -fx-background-color: #e3e3e3;
+    -fx-padding: 5px;
+    -fx-background-radius: 5px;
+}
+.right-align {
+    -fx-alignment: center-right; /* Align content to the right */
+}
+.left-center{
+    -fx-alignment: center-left;
+}
+.gray-background{
+    -fx-background-color: rgb(89, 89, 89);
+}
+.white-text{
+    -fx-text-fill: white;
+}
+.padding-20{
+    -fx-padding: 20px;
+}
+
+.light-gray-background{
+    -fx-background-color: #e4e4e4;
+}
+.message-container{
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+}
+.message-input{
+    -fx-background-color:transparent;
+}
+
+.space-15{
+    -fx-spacing: 15px;
+}
+
+.message-send-button{
+    -fx-background-image: url("./send.png");
+    -fx-border-color: red;
+}
+.placeholder-field {
+    -fx-prompt-text-fill: gray;
+    -fx-font-style: italic;
+    -fx-font-weight: 100;
+}
+
+.white-background{
+    -fx-background-color: white;
+}
+
+.black-background{
+    -fx-background-color: black;
+}
+.neutrilze-border{
+    -fx-border-color: none;
+    -fx-border-width: 0px;
+}
+.space-8{
+    -fx-spacing: 5px;
+}
+.padding-10{
+    -fx-padding: 10px;
+}
+.mar-background{
+    -fx-background-color: #000525;
+}
+.border-raduis-10px{
+    -fx-border-radius: 10px;
+}
+.mar-text{
+    -fx-text-fill: #000525;
+}
+
+.bg-blue-100 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(219, 234, 254, 1);
+}
+
+.bg-blue-200 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(191, 219, 254, 1);
+}
+
+.bg-blue-300 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(147, 197, 253, 1);
+}
+
+.bg-blue-400 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(96, 165, 250, 1);
+}
+
+.bg-blue-50 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(239, 246, 255, 1);
+}
+
+.bg-blue-500 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(59, 130, 246, 1);
+}
+
+.bg-blue-600 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(37, 99, 235, 1);
+}
+
+.bg-blue-700 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(29, 78, 216, 1);
+}
+
+.bg-blue-800 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(30, 64, 175, 1);
+}
+
+.bg-blue-900 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(30, 58, 138, 1);
+}
+
+.bg-gray-100 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(243, 244, 246, 1);
+}
+
+.bg-gray-200 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(229, 231, 235, 1);
+}
+
+.bg-gray-50 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(249, 250, 251, 1);
+}
+
+.bg-green-100 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(220, 252, 231, 1);
+}
+
+.bg-green-200 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(187, 247, 208, 1);
+}
+
+.bg-green-300 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(134, 239, 172, 1);
+}
+
+.bg-green-400 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(74, 222, 128, 1);
+}
+
+.bg-green-50 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(240, 253, 244, 1);
+}
+
+.bg-green-500 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(34, 197, 94, 1);
+}
+
+.bg-green-600 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(22, 163, 74, 1);
+}
+
+.bg-green-700 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(21, 128, 61, 1);
+}
+
+.bg-green-800 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(22, 101, 52, 1);
+}
+
+.bg-green-900 {
+    -fx-bg-opacity: 1;
+    -fx-background-color: rgba(20, 83, 45, 1);
+}
+
+

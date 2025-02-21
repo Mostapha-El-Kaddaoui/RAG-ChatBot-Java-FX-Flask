@@ -1,0 +1,70 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class DataBase {
+  + saveFileParagaraphs(String[]): void
+  + getFileById(int): myFile
+   files: ArrayList<myFile>
+}
+class HelloController {
+  # onHelloButtonClick(): void
+}
+class LLM {
+  + getResponse(String): String
+  + getResponseFromFile(String, String): String
+}
+class PChat {
+  + sendFile(): void
+  + SendMessage(): void
+  + injectResponse(String): void
+}
+class SDocument {
+  - paragraphs: List<String>
+  - link: String
+  + uploadFile(): void
+  + extractText(): List<String>
+   link: String
+   paragraphs: List<String>
+}
+class SideBar
+class SingletonConnexionDB {
+  - connection: Connection
+   connection: Connection
+}
+class TextProcess {
+  + remChar(String): String
+  + textCleaning(String): List<String>
+  + normText(String): String
+  + chunkText(String, int): List<String>
+  + remHaF(String): String
+}
+class UploadFile {
+  + uploadFilesToDB(MouseEvent): void
+  + upload(): void
+  - getByteArrayFromFile(File): byte[]
+  - goToChat(ActionEvent): void
+}
+class chat {
+  + start(Stage): void
+  + main(String[]): void
+}
+class chatController
+class myFile {
+  - idFile: int
+  - nameFile: String
+  - descriptionFile: String
+  - file: Blob
+   nameFile: String
+   descriptionFile: String
+   file: Blob
+   idFile: int
+}
+
+DataBase              -[#595959,dashed]->  myFile               : "«create»"
+LLM                   -[#595959,dashed]->  TextProcess          : "«create»"
+PChat                 -[#595959,dashed]->  LLM                  : "«create»"
+PChat                "1" *-[#595959,plain]-> "llm\n1" LLM                  
+@enduml
